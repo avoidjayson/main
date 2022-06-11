@@ -93,7 +93,7 @@
             sound5.Volume = 0.1
             sound5.Name = "ERASE"
             sound5.Looped = true
-            sound5.SoundId = "rbxassetid://7481193560"
+            sound5.SoundId = "rbxassetid://3167092959"
             sound5:Play()
     
             game.Lighting.Sky.Parent = workspace
@@ -271,8 +271,8 @@
         end
     end)
     
-    uis.InputBegan:Connect(function(i, XD)
-        if i.KeyCode == Enum.KeyCode.Space and XD == false then
+    uis.InputBegan:Connect(function(I, XD)
+        if I.KeyCode == Enum.KeyCode.Space and XD == false then
             if workspace:FindFirstChild(LocalPlayer.Name.."StringKOD") == nil then
                 if Jumping() == true and not Poter.IsPlaying then
                     AddVelocity(OldChar.HumanoidRootPart.CFrame.LookVector*150, OldChar)
